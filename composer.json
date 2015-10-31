@@ -1,0 +1,11 @@
+{
+  "require": {
+    "michelf/php-markdown": "1.*",
+    "league/plates": "3.*"
+  },
+  "autoload": {
+    "files": [
+      "lib/parser.php"
+    ]
+  }
+}

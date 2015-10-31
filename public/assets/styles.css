@@ -1,0 +1,39 @@
+
+a {
+  color: #428bca;
+}
+a:hover, a:focus {
+  color: #2a6496;
+}
+
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+}
+
+#content {
+  width: 80%;
+  margin-right: auto;
+  padding: 4px;
+  padding-right: 20px;
+}
+#nav {
+  width: 20%;
+  margin-top: 40px;
+  margin-left: auto;
+  border: 1px #ddd solid;
+  border-radius: 4px;
+  padding: 4px;
+}
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#nav ul li {
+  margin: 0;
+  padding: 0;
+}
