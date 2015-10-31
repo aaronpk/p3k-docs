@@ -7,6 +7,16 @@ use \Michelf\Markdown;
 
 $templates = new League\Plates\Engine(dirname(__FILE__).'/../views');
 
+if($_SERVER['REQUEST_URI'] == '/github-hook') {
+  echo 'ok';
+  flush();
+
+  shell_exec('./update_content.sh > ./hook.log 2>&1 &');
+  
+  die();
+}
+
+
 if(preg_match('|\/(.*)|', $_SERVER['REQUEST_URI'], $match)) {
 
   $page = $match[1];
