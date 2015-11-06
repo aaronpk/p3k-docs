@@ -12,7 +12,7 @@ if($_SERVER['REQUEST_URI'] == '/github-hook') {
   flush();
 
   shell_exec('./update_content.sh > ./hook.log 2>&1 &');
-  
+
   die();
 }
 
