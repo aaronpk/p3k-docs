@@ -6,6 +6,9 @@ a:hover, a:focus {
   color: #2a6496;
 }
 
+pre {
+  font-size: 14px;
+}
 
 #container {
   max-width: 800px;
