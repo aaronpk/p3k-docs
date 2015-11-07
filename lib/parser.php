@@ -14,7 +14,7 @@ class Parser {
     $source = preg_replace('/(?<!\\\)\[(http[^\] ]+) ([^\]]+)\]/', '[$2]($1)', $source);
 
     // Wiki page links with alternate display value [[page|pages]]
-    $source = preg_replace('|\[\[([^\]\|]+)\|([^\]]+)\]\]|', '[$2](/$1)', $source);
+    $source = preg_replace('|\[\[([^\]\|]*)\|([^\]]+)\]\]|', '[$2](/$1)', $source);
 
     // Wiki page links like [[page]]
     $source = preg_replace('|\[\[([^\]]+)\]\]|', '[$1](/$1)', $source);
